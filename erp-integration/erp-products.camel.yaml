@@ -23,8 +23,8 @@
               httpUri: http://host.docker.internal:4004/odata/v4/simple-erp/Products
               httpMethod: GET
               authMethodPriority: Basic
-              authUsername: "{{admin}}"
-              authPassword: "{{admin}}"
+              authUsername: "{{ERP_USER}}"
+              authPassword: "{{ERP_PASSWORD}}"
         - unmarshal:
             id: unmarshal-c39f
             json:
