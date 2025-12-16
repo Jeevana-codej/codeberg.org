@@ -1,20 +1,20 @@
 - route:
-    id: route-e5eb
-    nodePrefixId: route-5b7
+    id: route-49b6
+    nodePrefixId: route-828
     from:
-      id: from-4093
+      id: from-e968
       uri: kamelet:spring-rabbitmq-source
       parameters:
         host: rabbitmq
         port: 5672
         queues: erp-products-request
-        exchangeName: default
+        exchangeName: erp-products-request
       steps:
         - log:
-            id: log-cc9d
+            id: log-8fb6
             message: "Received products request from MQ: ${body}"
         - to:
-            id: to-00a0
+            id: to-b2c6
             description: Call erp-products-route
             uri: direct
             parameters:
