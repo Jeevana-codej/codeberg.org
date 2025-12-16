@@ -18,6 +18,7 @@
             pattern: CamelHttp*
         - to:
             id: to-f2fc
+            description: Call Products OData Service
             uri: http
             parameters:
               httpUri: http://host.docker.internal:4004/odata/v4/simple-erp/Products
